@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.Portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #FFF;
+    position: relative;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-45deg, #3877ff, #262525 70%);
+    width: 30%;
+}
+
+.icon .fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.content .intro span {
+    color: #5db9ee;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5db9ee;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #FFF;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.btn-container button {
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease
+}
+
+button:nth-child(1) {
+    background: #5db9ee;
+    color: #262525;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+
+button:nth-child(1):hover {
+    background: transparent;
+    color: #5db9ee;
+}
+
+button:nth-child(2):hover {
+    background: #5db9ee;
+    color: #262525;
+}
+
+.icon .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(white, #3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desgin .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+
+}
+
+.circle:nth-child(2) {
+    background-image: url("image/2-removebg-preview.png");
+    width: 30rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .7rem solid white;
+    box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877ff,
+        inset 0 0 2rem #3877ff, 0 0 4rem #3877ff,
+        inset 0 0 4rem #3877ff;
+}
+
+.navlist li a::after,
+.navlist .active::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navlist li a:hover::after,
+.navlist .active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+hr {
+    border: 0;
+    background-color: #5db9ee;
+    height: 1px;
+
+}
+
+.card-container {
+    background: linear-gradient(-60deg, #3877ff, #262525 50%);
+    width: 100%;
+    height: 110vh;
+}
+.card-container .heading{
+    background: linear-gradient(130deg, #5db9ee, #262525 50%);
+    text-align: center;
+    position: relative;
+    /* top: 40px; */
+    font-size: 5rem;
+    color: #262525;
+}
+.card-container .heading span{
+    color: #5db9ee;
+}
+
+.card-container .card{
+   position: relative;
+   top: 120px;
+   left: 50px;
+}
+.card{
+    cursor: pointer;
+    margin-left: 115px;
+    display: inline-block   ;
+    width: 20.2%;
+    background: linear-gradient(-190deg, #3877ff, #262525 100%);
+    border: 2px solid #020409;
+    border-radius: 10px;
+    height: 30rem;
+    box-shadow: 2px 2px 10px #000000; 
+}
+.card-container .card:hover{
+    box-shadow: 0px 0px  20px #000000 inset,
+    0px 0px 5px #000000; ;
+}
+
+.img img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+.project{
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    top: 10px;
+    padding: 5px;
+
+}
+.des{
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    top: 25px;
+
+}
+.des button{
+    margin-top: 30px;
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-left: -5px;
+    position: relative;
+    top: 25px;
+    
+}
+.icon1{
+    font-size: 25px;
+    background: linear-gradient(130deg, #3877ff, #262525 70%);
+    color: #bbb;
+    height: 100px;
+
+}
+.icon1 i{
+    cursor: pointer;
+   position: relative;
+   left: 530px;
+   top: 20px;
+   margin-right: 60px;
+   font-size: 40px;
+   border: 1px solid rgb(0, 0, 0);
+   border: none;
+   border-radius: 50%;
+   padding: 12px;
+   background: rgb(6, 5, 5);
+}
+.icon1 i:hover{
+   box-shadow: 0px 0px  15px #3877ff inset,
+   0px 0px 5px #3877ff;
+   
+   
+    
+}
